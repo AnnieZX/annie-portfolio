@@ -23,29 +23,29 @@ export default function AnniePortfolio() {
     },
   ];
 
-  const experience = [
-    {
-      role: "Research Assistant",
-      org: "IRSC Lab",
-      period: "2025 — Present",
-      details:
-        "Benchmarking segmentation models on large-scale satellite and drone imagery, evaluating IoU/F1/precision/recall, and studying prompt sensitivity for segmentation quality.",
-    },
-    {
-      role: "Research Assistant",
-      org: "Data Mining Lab",
-      period: "2025",
-      details:
-        "Developing NLP and LLM-based approaches for pharmaceutical and FDA-related prediction tasks through feature engineering, modeling, and interdisciplinary collaboration.",
-    },
-    {
-      role: "Cloud Consulting Intern",
-      org: "KPMG",
-      period: "2024",
-      details:
-        "Analyzed IT/OT and cloud architecture in EV manufacturing scenarios, compared industrial digital infrastructure, and proposed data and AI-oriented architecture improvements.",
-    },
-  ];
+const experience = [
+  {
+    role: "Research Assistant",
+    org: "IRSC Lab, Wake Forest University",
+    period: "Jan 2026 — Present",
+    details:
+      "Benchmarking segmentation models (SAM, SAM2) on large-scale satellite and drone imagery (40,000+ images), evaluating IoU, F1, precision, and recall. Designed automated pipelines for large-scale evaluation and analyzed prompt sensitivity (bounding boxes, point prompts) to assess model robustness.",
+  },
+  {
+    role: "Research Assistant",
+    org: "Data Mining Lab, Wake Forest University",
+    period: "Apr 2024 — Aug 2025",
+    details:
+      "Developed NLP and LLM-based models for pharmaceutical analysis and FDA approval prediction. Applied feature engineering and machine learning techniques to improve predictive performance and integrated multi-source biomedical data for robust modeling.",
+  },
+  {
+    role: "Cloud Consulting Intern",
+    org: "KPMG",
+    period: "Summer 2025",
+    details:
+      "Analyzed IT/OT and cloud architecture for EV manufacturing systems (BYD), benchmarking against Tesla and Toyota. Evaluated industrial data pipelines and proposed scalable data infrastructure to support AI/ML use cases such as predictive maintenance and anomaly detection.",
+  },
+];
 
   const skills = [
     "Python",
