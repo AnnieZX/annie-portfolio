@@ -40,6 +40,7 @@ const experience = [
   },
   {
     role: "Cloud Consulting Intern",
+    org: "KPMG",
     period: "Summer 2025",
     details:
       "Analyzed IT/OT and cloud architecture for EV manufacturing systems (BYD), benchmarking against Tesla and Toyota. Evaluated industrial data pipelines and proposed scalable data infrastructure to support AI/ML use cases such as predictive maintenance and anomaly detection.",
