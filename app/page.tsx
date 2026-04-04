@@ -27,18 +27,21 @@ export default function AnniePortfolio() {
     {
       role: "Research Assistant",
       org: "IRSC Lab",
+      period: "2025 — Present",
       details:
         "Benchmarking segmentation models on large-scale satellite and drone imagery, evaluating IoU/F1/precision/recall, and studying prompt sensitivity for segmentation quality.",
     },
     {
       role: "Research Assistant",
       org: "Data Mining Lab",
+      period: "2025",
       details:
         "Developing NLP and LLM-based approaches for pharmaceutical and FDA-related prediction tasks through feature engineering, modeling, and interdisciplinary collaboration.",
     },
     {
       role: "Cloud Consulting Intern",
       org: "KPMG",
+      period: "2024",
       details:
         "Analyzed IT/OT and cloud architecture in EV manufacturing scenarios, compared industrial digital infrastructure, and proposed data and AI-oriented architecture improvements.",
     },
@@ -281,21 +284,35 @@ export default function AnniePortfolio() {
           </div>
         </section>
 
-        <section id="experience" className="mt-24 grid gap-8 lg:grid-cols-[0.7fr_1.3fr]">
-          <div>
+        <section id="experience" className="mt-24 grid gap-8 lg:grid-cols-[0.72fr_1.28fr]">
+          <div className="lg:sticky lg:top-24 lg:self-start">
             <p className="text-sm uppercase tracking-[0.25em] text-neutral-500">Experience</p>
             <h2 className="mt-3 text-3xl font-semibold">What I’ve worked on</h2>
+            <p className="mt-4 max-w-xs text-sm leading-6 text-neutral-400">
+              My experience moves across research, machine learning, and applied AI systems, with a focus on building work that feels both rigorous and useful.
+            </p>
+            <div className="mt-6 h-20 w-px bg-gradient-to-b from-white/20 via-white/10 to-transparent"></div>
           </div>
-          <div className="space-y-5">
-            {experience.map((item) => (
-              <div key={item.role + item.org} className="rounded-[2rem] border border-white/10 bg-white/5 p-6">
-                <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
-                  <h3 className="text-xl font-semibold">{item.role}</h3>
-                  <p className="text-sm text-neutral-400">{item.org}</p>
+
+          <div className="relative pl-8">
+            <div className="absolute left-3 top-2 bottom-2 w-px bg-gradient-to-b from-white/20 via-white/10 to-transparent"></div>
+            <div className="space-y-7">
+              {experience.map((item) => (
+                <div key={item.role + item.org} className="relative">
+                  <div className="absolute -left-[26px] top-8 h-3 w-3 rounded-full border border-white/20 bg-neutral-950 shadow-[0_0_0_6px_rgba(255,255,255,0.02)]"></div>
+                  <div className="rounded-[2rem] border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:bg-white/[0.07]">
+                    <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+                      <div>
+                        <p className="text-xs uppercase tracking-[0.2em] text-neutral-500">{item.period}</p>
+                        <h3 className="mt-2 text-xl font-semibold">{item.role}</h3>
+                      </div>
+                      <p className="text-sm text-neutral-400 sm:pt-1">{item.org}</p>
+                    </div>
+                    <p className="mt-4 leading-7 text-neutral-300">{item.details}</p>
+                  </div>
                 </div>
-                <p className="mt-4 leading-7 text-neutral-300">{item.details}</p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </section>
 
